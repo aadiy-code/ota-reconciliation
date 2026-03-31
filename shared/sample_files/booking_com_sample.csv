@@ -1,0 +1,16 @@
+Booking Number,Property Name,Check-in,Check-out,Booker Name,Room Type,Guests,Status,Gross Booking Value (INR),Commission (INR),Property Currency,Booking Date,Payment Method
+BK1001,The Grand Hotel,2026-04-01,2026-04-04,Mr. Rajesh Kumar,Deluxe Double Room,2,confirmed,18000,2700,INR,2026-01-15,pay_at_hotel
+BK1002,The Grand Hotel,2026-04-05,2026-04-08,Mrs. Priya Sharma,Standard Twin Room,2,confirmed,12000,1800,INR,2026-01-18,pay_at_hotel
+BK1003,The Grand Hotel,2026-04-10,2026-04-12,Dr. Anil Mehta,Junior Suite,1,confirmed,25000,3750,INR,2026-01-20,prepaid
+BK1004,The Grand Hotel,2026-04-15,2026-04-18,Ms. Sunita Patel,Standard Double Room,2,confirmed,10500,1575,INR,2026-02-01,pay_at_hotel
+BK1005,The Grand Hotel,2026-04-20,2026-04-23,Mr. Vikram Singh,Deluxe Twin Room,3,confirmed,19500,2925,INR,2026-02-05,pay_at_hotel
+BK1006,The Grand Hotel,2026-04-25,2026-04-27,Mrs. Kavya Nair,Superior Double Room,2,confirmed,14000,2100,INR,2026-02-10,prepaid
+BK1007,The Grand Hotel,2026-05-01,2026-05-05,Mr. Rohit Gupta,Family Room,4,confirmed,28000,4200,INR,2026-02-15,pay_at_hotel
+BK1008,The Grand Hotel,2026-05-10,2026-05-12,Ms. Deepa Krishnan,Standard Double Room,1,confirmed,7000,1050,INR,2026-02-20,pay_at_hotel
+BK1009,The Grand Hotel,2026-04-03,2026-04-06,Mr. Sanjay Verma,Deluxe Double Room,2,cancelled,18000,0,INR,2026-01-25,pay_at_hotel
+BK1010,The Grand Hotel,2026-04-08,2026-04-11,Mrs. Anita Rao,Standard Twin Room,2,confirmed,12500,1875,INR,2026-01-28,prepaid
+BK1011,The Grand Hotel,2026-04-12,2026-04-15,Mr. Kiran Joshi,Superior Double Room,2,confirmed,15000,2250,INR,2026-02-03,pay_at_hotel
+BK1012,The Grand Hotel,2026-04-18,2026-04-21,Dr. Meera Pillai,Junior Suite,2,no_show,25500,3825,INR,2026-02-08,prepaid
+BK1013,The Grand Hotel,2026-04-22,2026-04-24,Mr. Arjun Menon,Standard Double Room,2,confirmed,7200,1080,INR,2026-02-12,pay_at_hotel
+BK1014,The Grand Hotel,2026-05-05,2026-05-08,Mrs. Lakshmi Iyer,Deluxe Double Room,2,confirmed,19200,2880,INR,2026-02-18,prepaid
+BK1015,The Grand Hotel,2026-05-15,2026-05-18,Mr. Suresh Reddy,Standard Twin Room,2,confirmed,11500,1725,INR,2026-02-22,pay_at_hotel

@@ -1,0 +1,24 @@
+PMS Reservation ID,OTA Reference Number,Source Channel,Guest Name,Check In Date,Check Out Date,Room Type,Adults,Children,Total Revenue (INR),Net Revenue (INR),Tax Amount (INR),Status,Booking Date,Payment Type
+PMS001,BK1001,booking_com,Rajesh Kumar,2026-04-01,2026-04-04,Dlx Dbl,2,0,18000,15300,2700,confirmed,2026-01-15,pay_at_hotel
+PMS002,BK1002,booking_com,Priya Sharma,2026-04-05,2026-04-08,Std Twn,2,0,12000,10200,1800,confirmed,2026-01-18,pay_at_hotel
+PMS003,BK1003,booking_com,Anil Mehta,2026-04-10,2026-04-12,Jr Ste,1,0,25000,21250,3750,confirmed,2026-01-20,prepaid
+PMS004,BK1004,booking_com,Sunita Patel,2026-04-15,2026-04-18,Std Dbl,2,0,10500,8925,1575,confirmed,2026-02-01,pay_at_hotel
+PMS005,BK1005,booking_com,Vikram Singh,2026-04-20,2026-04-23,Dlx Twn,3,0,19500,16575,2925,confirmed,2026-02-05,pay_at_hotel
+PMS006,BK1006,booking_com,Kavya Nair,2026-04-25,2026-04-27,Sup Dbl,2,0,14000,11900,2100,confirmed,2026-02-10,prepaid
+PMS007,BK1007,booking_com,Rohit Gupta,2026-05-01,2026-05-05,Fam Rm,4,0,28000,23800,4200,confirmed,2026-02-15,pay_at_hotel
+PMS008,BK1008,booking_com,Deepa Krishnan,2026-05-10,2026-05-12,Std Dbl,1,0,7000,5950,1050,confirmed,2026-02-20,pay_at_hotel
+PMS009,EXP20001,expedia,Neha Agarwal,2026-04-02,2026-04-05,Std Dbl,2,0,15000,12750,2250,confirmed,2026-01-16,expedia_collect
+PMS010,EXP20002,expedia,Ravi Chandrasekhar,2026-04-06,2026-04-09,Dlx Dbl,2,0,21000,17850,3150,confirmed,2026-01-19,hotel_collect
+PMS011,EXP20003,expedia,Pooja Malhotra,2026-04-11,2026-04-14,Std Twn,3,1,18500,15725,2775,confirmed,2026-01-22,expedia_collect
+PMS012,EXP20004,expedia,Amit Sharma,2026-04-16,2026-04-18,Dlx Dbl,1,0,14000,11900,2100,confirmed,2026-02-02,hotel_collect
+PMS013,EXP20005,expedia,Divya Menon,2026-04-21,2026-04-24,Std Dbl,2,0,13500,11475,2025,confirmed,2026-02-06,expedia_collect
+PMS014,EXP20006,expedia,Suresh Kumar,2026-04-26,2026-04-28,Std Twn,2,0,10000,8500,1500,confirmed,2026-02-11,hotel_collect
+PMS015,EXP20007,expedia,Anjali Singh,2026-05-02,2026-05-06,Dlx Dbl,2,1,26000,22100,3900,confirmed,2026-02-16,expedia_collect
+PMS016,BK1009,booking_com,Sanjay Verma,2026-04-03,2026-04-06,Dlx Dbl,2,0,18000,15300,2700,confirmed,2026-01-25,pay_at_hotel
+PMS017,EXP20009,expedia,Rekha Nair,2026-04-04,2026-04-07,Std Twn,2,0,16500,14025,2475,confirmed,2026-01-26,expedia_collect
+PMS018,BK1010,booking_com,Anita Rao,2026-04-08,2026-04-11,Std Twn,2,0,13200,11220,1980,confirmed,2026-01-28,prepaid
+PMS019,,direct,Harish Malhotra,2026-04-17,2026-04-20,Jr Ste,2,0,24000,20400,3600,confirmed,2026-02-05,pay_at_hotel
+PMS020,,direct,Savita Desai,2026-04-28,2026-04-30,Std Dbl,2,0,7500,6375,1125,confirmed,2026-02-14,pay_at_hotel
+PMS021,EXP20010,expedia,Vinod Patel,2026-04-09,2026-04-12,Dlx Dbl,2,0,20000,17000,3000,confirmed,2026-01-29,hotel_collect
+PMS022,,direct,Corporate_Booking_TechCorp,2026-05-08,2026-05-10,Std Dbl,1,0,6800,5780,1020,confirmed,2026-02-25,pay_at_hotel
+PMS023,BK1010,booking_com,Anita Rao,2026-04-08,2026-04-11,Std Twn,2,0,12500,10625,1875,confirmed,2026-01-28,prepaid

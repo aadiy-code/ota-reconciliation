@@ -1,0 +1,60 @@
+{
+  "room_type_mappings": [
+    {"source_value": "standard double room", "normalized": "standard_double", "platform": null},
+    {"source_value": "standard twin room", "normalized": "standard_twin", "platform": null},
+    {"source_value": "superior double room", "normalized": "superior_double", "platform": null},
+    {"source_value": "deluxe double room", "normalized": "deluxe_double", "platform": null},
+    {"source_value": "deluxe twin room", "normalized": "deluxe_twin", "platform": null},
+    {"source_value": "executive room", "normalized": "executive", "platform": null},
+    {"source_value": "junior suite", "normalized": "junior_suite", "platform": null},
+    {"source_value": "suite", "normalized": "suite", "platform": null},
+    {"source_value": "penthouse suite", "normalized": "penthouse", "platform": null},
+    {"source_value": "studio", "normalized": "studio", "platform": null},
+    {"source_value": "1 bedroom apartment", "normalized": "apartment_1br", "platform": null},
+    {"source_value": "family room", "normalized": "family", "platform": null},
+
+    {"source_value": "classic double", "normalized": "standard_double", "platform": "booking_com"},
+    {"source_value": "comfort double", "normalized": "superior_double", "platform": "booking_com"},
+    {"source_value": "premiere double", "normalized": "deluxe_double", "platform": "booking_com"},
+
+    {"source_value": "standard room, 1 king bed", "normalized": "standard_double", "platform": "expedia"},
+    {"source_value": "deluxe room, 1 king bed", "normalized": "deluxe_double", "platform": "expedia"},
+    {"source_value": "standard room, 2 twin beds", "normalized": "standard_twin", "platform": "expedia"},
+    {"source_value": "standard room,  1 king bed", "normalized": "standard_double", "platform": "expedia"},
+    {"source_value": "deluxe room,  1 king bed", "normalized": "deluxe_double", "platform": "expedia"},
+    {"source_value": "standard room,  2 twin beds", "normalized": "standard_twin", "platform": "expedia"},
+
+    {"source_value": "std dbl", "normalized": "standard_double", "platform": "pms"},
+    {"source_value": "dlx dbl", "normalized": "deluxe_double", "platform": "pms"},
+    {"source_value": "sup dbl", "normalized": "superior_double", "platform": "pms"},
+    {"source_value": "jr ste", "normalized": "junior_suite", "platform": "pms"},
+    {"source_value": "fam rm", "normalized": "family", "platform": "pms"},
+    {"source_value": "std twn", "normalized": "standard_twin", "platform": "pms"},
+    {"source_value": "dlx twn", "normalized": "deluxe_twin", "platform": "pms"},
+    {"source_value": "exe rm", "normalized": "executive", "platform": "pms"}
+  ],
+  "status_mappings": {
+    "booking_com": {
+      "ok": "confirmed",
+      "confirmed": "confirmed",
+      "cancelled_by_guest": "cancelled",
+      "cancelled_by_hotel": "cancelled",
+      "no_show": "no_show",
+      "checked_in": "checked_in",
+      "checked_out": "checked_out"
+    },
+    "expedia": {
+      "booked": "confirmed",
+      "confirmed": "confirmed",
+      "cancelled": "cancelled",
+      "no_show": "no_show",
+      "checked_in": "checked_in"
+    }
+  },
+  "amount_tolerances": {
+    "default": {
+      "absolute_inr": 200,
+      "percentage": 0.02
+    }
+  }
+}
