@@ -90,7 +90,7 @@ def _seed_mapping_rules():
 app = FastAPI(
     title="OTA Reconciliation System",
     description="Production-ready Online Travel Agency hotel reservation reconciliation system",
-    version="1.0.0",
+    version="1.0.1",
     lifespan=lifespan,
 )
 
