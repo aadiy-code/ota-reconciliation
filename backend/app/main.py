@@ -26,24 +26,52 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down...")
 
 
-def _seed_mapping_rules():
-    """Seed mapping rules from the seed config file."""
-    # Try multiple possible paths for the seed config
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    candidate_paths = [
-        os.path.normpath(os.path.join(base_dir, "..", "..", "..", "shared", "seed_config", "room_type_mapping.json")),
-        os.path.normpath(os.path.join(base_dir, "..", "..", "shared", "seed_config", "room_type_mapping.json")),
-        os.path.normpath(os.path.join(os.getcwd(), "..", "shared", "seed_config", "room_type_mapping.json")),
-        os.path.normpath(os.path.join(os.getcwd(), "shared", "seed_config", "room_type_mapping.json")),
+EMBEDDED_SEED_CONFIG = {
+    "room_type_mappings": [
+        {"source_value": "standard double room", "normalized": "standard_double", "platform": None},
+        {"source_value": "standard twin room", "normalized": "standard_twin", "platform": None},
+        {"source_value": "superior double room", "normalized": "superior_double", "platform": None},
+        {"source_value": "deluxe double room", "normalized": "deluxe_double", "platform": None},
+        {"source_value": "deluxe twin room", "normalized": "deluxe_twin", "platform": None},
+        {"source_value": "executive room", "normalized": "executive", "platform": None},
+        {"source_value": "junior suite", "normalized": "junior_suite", "platform": None},
+        {"source_value": "suite", "normalized": "suite", "platform": None},
+        {"source_value": "penthouse suite", "normalized": "penthouse", "platform": None},
+        {"source_value": "studio", "normalized": "studio", "platform": None},
+        {"source_value": "1 bedroom apartment", "normalized": "apartment_1br", "platform": None},
+        {"source_value": "family room", "normalized": "family", "platform": None},
+        {"source_value": "classic double", "normalized": "standard_double", "platform": "booking_com"},
+        {"source_value": "comfort double", "normalized": "superior_double", "platform": "booking_com"},
+        {"source_value": "premiere double", "normalized": "deluxe_double", "platform": "booking_com"},
+        {"source_value": "standard room 1 king bed", "normalized": "standard_double", "platform": "expedia"},
+        {"source_value": "deluxe room 1 king bed", "normalized": "deluxe_double", "platform": "expedia"},
+        {"source_value": "standard room 2 twin beds", "normalized": "standard_twin", "platform": "expedia"},
+        {"source_value": "std dbl", "normalized": "standard_double", "platform": "pms"},
+        {"source_value": "dlx dbl", "normalized": "deluxe_double", "platform": "pms"},
+        {"source_value": "sup dbl", "normalized": "superior_double", "platform": "pms"},
+        {"source_value": "std twn", "normalized": "standard_twin", "platform": "pms"},
+        {"source_value": "dlx twn", "normalized": "deluxe_twin", "platform": "pms"},
+        {"source_value": "jr ste", "normalized": "junior_suite", "platform": "pms"},
+        {"source_value": "fam rm", "normalized": "family", "platform": "pms"},
     ]
-    seed_path = next((p for p in candidate_paths if os.path.exists(p)), None)
-    if not seed_path:
-        logger.warning("Seed config not found in any candidate paths, skipping seed.")
-        return
+}
 
+
+def _seed_mapping_rules():
+    """Seed mapping rules from embedded config (works in all environments)."""
     try:
-        with open(seed_path, "r") as f:
-            config = json.load(f)
+        config = EMBEDDED_SEED_CONFIG
+
+        # Also try to load from file if available (local dev)
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        candidate_paths = [
+            os.path.normpath(os.path.join(base_dir, "..", "..", "..", "shared", "seed_config", "room_type_mapping.json")),
+            os.path.normpath(os.path.join(base_dir, "..", "..", "shared", "seed_config", "room_type_mapping.json")),
+        ]
+        seed_path = next((p for p in candidate_paths if os.path.exists(p)), None)
+        if seed_path:
+            with open(seed_path, "r") as f:
+                config = json.load(f)
 
         from .database import SessionLocal
         from .services.feedback_store import FeedbackStoreService
@@ -52,7 +80,7 @@ def _seed_mapping_rules():
         try:
             svc = FeedbackStoreService()
             count = svc.seed_from_config(config, db)
-            logger.info(f"Seeded {count} mapping rules from config.")
+            logger.info(f"Seeded {count} mapping rules.")
         finally:
             db.close()
     except Exception as e:

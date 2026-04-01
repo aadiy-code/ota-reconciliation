@@ -91,19 +91,25 @@ class MatchingService:
                 needs_review=needs_review,
             )
 
-        # Priority 3: Fuzzy matching
+        # Priority 3: Fuzzy matching — only accept if confidence meets manual review threshold
         fuzzy_candidates = self.try_fuzzy_match(ota, available_pms)
         if fuzzy_candidates:
             best = fuzzy_candidates[0]
-            final_status = self._determine_status(ota, best)
-            needs_review = self._needs_review(best.confidence, final_status)
-            return MatchResult(
-                ota_booking=ota,
-                best_match=best,
-                all_candidates=fuzzy_candidates,
-                final_status=final_status,
-                needs_review=needs_review,
+            name_sim = self.calculate_name_similarity(
+                ota.guest_name_normalized or "",
+                best.pms_booking.guest_name_normalized or "",
             )
+            # Reject weak fuzzy matches — must meet minimum confidence AND name threshold
+            if best.confidence >= self.manual_review_threshold and name_sim >= self.name_review_threshold:
+                final_status = self._determine_status(ota, best)
+                needs_review = self._needs_review(best.confidence, final_status)
+                return MatchResult(
+                    ota_booking=ota,
+                    best_match=best,
+                    all_candidates=fuzzy_candidates,
+                    final_status=final_status,
+                    needs_review=needs_review,
+                )
 
         # No match found
         return MatchResult(

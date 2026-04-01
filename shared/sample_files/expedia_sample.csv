@@ -1,16 +1,16 @@
 Itinerary ID,Hotel Confirmation Number,Check-In Date,Check-Out Date,Guest Name,Room Type,Adults,Children,Total Amount (INR),Expedia Collect,Hotel Collect,Status,Booking Date,Payment Model
-EXP20001,HCONF2001,2026-04-02,2026-04-05,Neha Agarwal,Standard Room, 1 King Bed,2,0,15000,15000,0,confirmed,2026-01-16,expedia_collect
-EXP20002,HCONF2002,2026-04-06,2026-04-09,Ravi Chandrasekhar,Deluxe Room, 1 King Bed,2,0,21000,0,21000,confirmed,2026-01-19,hotel_collect
-EXP20003,HCONF2003,2026-04-11,2026-04-14,Pooja Malhotra,Standard Room, 2 Twin Beds,3,1,18500,18500,0,confirmed,2026-01-22,expedia_collect
-EXP20004,HCONF2004,2026-04-16,2026-04-18,Amit Sharma,Deluxe Room, 1 King Bed,1,0,14000,0,14000,confirmed,2026-02-02,hotel_collect
-EXP20005,HCONF2005,2026-04-21,2026-04-24,Divya Menon,Standard Room, 1 King Bed,2,0,13500,13500,0,confirmed,2026-02-06,expedia_collect
-EXP20006,HCONF2006,2026-04-26,2026-04-28,Suresh Kumar,Standard Room, 2 Twin Beds,2,0,10000,0,10000,confirmed,2026-02-11,hotel_collect
-EXP20007,HCONF2007,2026-05-02,2026-05-06,Anjali Singh,Deluxe Room, 1 King Bed,2,1,26000,26000,0,confirmed,2026-02-16,expedia_collect
-EXP20008,HCONF2008,2026-05-11,2026-05-13,Mahesh Babu,Standard Room, 1 King Bed,2,0,10000,0,10000,cancelled,2026-02-21,hotel_collect
-EXP20009,HCONF2009,2026-04-04,2026-04-07,Rekha Nair,Standard Room, 2 Twin Beds,2,0,16500,16500,0,confirmed,2026-01-26,expedia_collect
-EXP20010,HCONF2010,2026-04-09,2026-04-12,Vinod Patel,Deluxe Room, 1 King Bed,2,0,20000,0,20000,confirmed,2026-01-29,hotel_collect
-EXP20011,HCONF2011,2026-04-13,2026-04-16,Geeta Krishnan,Standard Room, 1 King Bed,1,0,9500,9500,0,confirmed,2026-02-04,expedia_collect
-EXP20012,HCONF2012,2026-04-19,2026-04-22,Prakash Rao,Standard Room, 2 Twin Beds,2,0,12000,0,12000,confirmed,2026-02-09,hotel_collect
-EXP20013,HCONF2013,2026-04-23,2026-04-25,Shweta Joshi,Deluxe Room, 1 King Bed,2,0,14500,14500,0,confirmed,2026-02-13,expedia_collect
-EXP20014,HCONF2014,2026-05-06,2026-05-09,Rahul Verma,Standard Room, 1 King Bed,2,0,13000,0,13000,confirmed,2026-02-19,hotel_collect
-EXP20015,HCONF2015,2026-05-16,2026-05-19,Kavitha Pillai,Deluxe Room, 1 King Bed,2,0,21500,21500,0,confirmed,2026-02-23,expedia_collect
+EXP20001,HCONF2001,2026-04-02,2026-04-05,Neha Agarwal,Standard Double Room,2,0,15000,15000,0,confirmed,2026-01-16,expedia_collect
+EXP20002,HCONF2002,2026-04-06,2026-04-09,Ravi Chandrasekhar,Deluxe Double Room,2,0,21000,0,21000,confirmed,2026-01-19,hotel_collect
+EXP20003,HCONF2003,2026-04-11,2026-04-14,Pooja Malhotra,Standard Twin Room,3,1,18500,18500,0,confirmed,2026-01-22,expedia_collect
+EXP20004,HCONF2004,2026-04-16,2026-04-18,Amit Sharma,Deluxe Double Room,1,0,14000,0,14000,confirmed,2026-02-02,hotel_collect
+EXP20005,HCONF2005,2026-04-21,2026-04-24,Divya Menon,Standard Double Room,2,0,13500,13500,0,confirmed,2026-02-06,expedia_collect
+EXP20006,HCONF2006,2026-04-26,2026-04-28,Suresh Kumar,Standard Twin Room,2,0,10000,0,10000,confirmed,2026-02-11,hotel_collect
+EXP20007,HCONF2007,2026-05-02,2026-05-06,Anjali Singh,Deluxe Double Room,2,1,26000,26000,0,confirmed,2026-02-16,expedia_collect
+EXP20008,HCONF2008,2026-05-11,2026-05-13,Mahesh Babu,Standard Double Room,2,0,10000,0,10000,cancelled,2026-02-21,hotel_collect
+EXP20009,HCONF2009,2026-04-04,2026-04-07,Rekha Nair,Standard Twin Room,2,0,16500,16500,0,confirmed,2026-01-26,expedia_collect
+EXP20010,HCONF2010,2026-04-09,2026-04-12,Vinod Patel,Deluxe Double Room,2,0,20000,0,20000,confirmed,2026-01-29,hotel_collect
+EXP20011,HCONF2011,2026-04-13,2026-04-16,Geeta Krishnan,Standard Double Room,1,0,9500,9500,0,confirmed,2026-02-04,expedia_collect
+EXP20012,HCONF2012,2026-04-19,2026-04-22,Prakash Rao,Standard Twin Room,2,0,12000,0,12000,confirmed,2026-02-09,hotel_collect
+EXP20013,HCONF2013,2026-04-23,2026-04-25,Shweta Joshi,Deluxe Double Room,2,0,14500,14500,0,confirmed,2026-02-13,expedia_collect
+EXP20014,HCONF2014,2026-05-06,2026-05-09,Rahul Verma,Standard Double Room,2,0,13000,0,13000,confirmed,2026-02-19,hotel_collect
+EXP20015,HCONF2015,2026-05-16,2026-05-19,Kavitha Pillai,Deluxe Double Room,2,0,21500,21500,0,confirmed,2026-02-23,expedia_collect

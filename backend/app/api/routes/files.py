@@ -23,7 +23,10 @@ schema_mapper = SchemaMapperService()
 
 def read_file_as_df(file_path: str, file_type: str) -> pd.DataFrame:
     if file_type == "csv":
-        return pd.read_csv(file_path, dtype=str, keep_default_na=False)
+        return pd.read_csv(
+            file_path, dtype=str, keep_default_na=False,
+            index_col=False, on_bad_lines="warn", encoding_errors="replace",
+        )
     elif file_type in ("xlsx", "xls"):
         return pd.read_excel(file_path, dtype=str, keep_default_na=False)
     else:
