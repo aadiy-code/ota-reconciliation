@@ -20,6 +20,8 @@ DATE_FORMATS = [
     "%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y",
     "%b %d %Y", "%B %d %Y",
     "%Y/%m/%d", "%d.%m.%Y", "%Y%m%d",
+    # 2-digit year variants
+    "%d/%m/%y", "%m/%d/%y", "%d-%m-%y", "%y-%m-%d", "%y/%m/%d",
 ]
 
 BOOKING_COM_STATUS_MAP = {
