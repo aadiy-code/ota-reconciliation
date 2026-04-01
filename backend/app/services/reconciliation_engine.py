@@ -99,7 +99,7 @@ class ReconciliationService:
             else:
                 final_status = mr.final_status
                 reason_codes = mr.best_match.reason_codes if mr.best_match else [ReasonCode.no_pms_match]
-                confidence = mr.best_match.confidence if mr.best_match else 0.0
+                confidence = mr.best_match.confidence if mr.best_match else 100.0
                 matched_rule = mr.best_match.matched_rule if mr.best_match else None
                 pms_id = mr.best_match.pms_booking.id if mr.best_match else None
                 explanation = self.generate_explanation(
@@ -143,7 +143,7 @@ class ReconciliationService:
                     ota_booking_id=None,
                     pms_booking_id=pms.id,
                     reconciliation_status=ReconciliationStatus.missing_in_ota.value,
-                    confidence_score=0.0,
+                    confidence_score=100.0,
                     matched_rule=None,
                     reason_codes_json=[ReasonCode.no_ota_match.value],
                     explanation_text=explanation,
